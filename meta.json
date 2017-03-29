@@ -1,0 +1,28 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "An Eagle.js project"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "lint": {
+      "type": "confirm",
+      "message": "Use eslint to lint your code?"
+    }
+  },
+  "filters": {
+    ".eslintignore": "lint",
+    ".eslintrc.js": "lint"
+  },
+  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run dev.{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev.{{/inPlace}}"
+}
