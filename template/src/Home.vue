@@ -4,7 +4,7 @@
     slide(enter='fadeIn' leave='bounceOutLeft')
       .center.frontpage
         h1 Eagle.js
-        img(src='./assets/logo.svg')
+        img(src='./logo.svg')
         h4 A Slideshow Framework for Vue.js
 </template>
 
